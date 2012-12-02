@@ -1,4 +1,4 @@
-set nocompatible                
+set nocompatible
 
 call pathogen#infect()
 
@@ -64,10 +64,6 @@ map <leader>tm :tabmove
 " Emacs-style completion window.
 map <leader>t :FuzzyFinderTextMate<Enter>
 
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
-
-"vnoremap ; :
-"vnoremap : ;
-
+" Space to toggle folds.
+nnoremap <Space> za
+vnoremap <Space> za
