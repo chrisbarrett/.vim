@@ -19,7 +19,9 @@ repos = [
   'git://github.com/vim-scripts/Auto-Pairs.git',
   'git://github.com/tpope/vim-ragtag.git',
   'git://github.com/shemerey/vim-peepopen.git',
-  'git://github.com/tpope/vim-unimpaired.git'
+  'git://github.com/tpope/vim-unimpaired.git',
+   # themes
+  'git://github.com/altercation/vim-colors-solarized.git'
 ]
 
 require 'fileutils'
