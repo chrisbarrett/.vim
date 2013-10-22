@@ -2,53 +2,57 @@ set nocompatible
 
 call pathogen#infect()
 
-syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
-
+" Turn on syntax highlighting.
+syntax enable
+" Turn on file type detection.
+filetype plugin indent on
 colorscheme solarized
-
-runtime macros/matchit.vim        " Load the matchit plugin.
-
-set showcmd                       " Display incomplete commands.
-set showmode                      " Display the mode you're in.
-
-set backspace=indent,eol,start    " Intuitive backspacing.
-
-set hidden                        " Handle multiple buffers better.
-
-set wildmenu                      " Enhanced command line completion.
-set wildmode=list:longest         " Complete files like a shell.
-
-set ignorecase                    " Case-insensitive searching.
-set smartcase                     " But case-sensitive if expression contains a capital letter.
-
-set number                        " Show line numbers.
-set ruler                         " Show cursor position.
-
-set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
-
-set wrap                          " Turn on line wrapping.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
-
-set title                         " Set the terminal's title
-
-set visualbell                    " No beeping.
-
-set nobackup                      " Don't make a backup before overwriting a file.
-set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
-
-set laststatus=2                  " Show the status line all the time
+" Load the matchit plugin.
+runtime macros/matchit.vim
+" Display incomplete commands.
+set showcmd
+" Display the mode you're in.
+set showmode
+" Intuitive backspacing.
+set backspace=indent,eol,start
+" Handle multiple buffers better.
+set hidden
+" Enhanced command line completion.
+set wildmenu
+" Complete files like a shell.
+set wildmode=list:longest
+" Case-insensitive searching.
+set ignorecase
+set smartcase
+" Show line numbers.
+set number
+" Show cursor position.
+set ruler
+" Highlight matches as you type.
+set incsearch
+set hlsearch
+" Enable line wrapping
+set wrap
+" Show 3 lines of context around the cursor.
+set scrolloff=3
+" Disable beeps
+set visualbell
+" Disable backups
+set nobackup
+set nowritebackup
+" Keep swap files in one location
+set directory=$HOME/.vim/tmp//,.
+" Set global tab width.
+set tabstop=2
+set shiftwidth=2
+" Use spaces instead of tabs
+set expandtab
+" Show the status line all the time
+set laststatus=2
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
-
-autocmd BufWritePre * :%s/\s\+$//e    " Delete trailing whitespace on save.
-
+" Delete trailing whitespace on save.
+autocmd BufWritePre * :%s/\s\+$//e
 " Tab mappings.
 map <leader>tt :tabnew<cr>
 map <leader>te :tabedit
@@ -59,10 +63,8 @@ map <leader>tp :tabprevious<cr>
 map <leader>tf :tabfirst<cr>
 map <leader>tl :tablast<cr>
 map <leader>tm :tabmove
-
 " Emacs-style completion window.
 map <leader>t :FuzzyFinderTextMate<Enter>
-
 " Space to toggle folds.
 nnoremap <Space> za
 vnoremap <Space> za
