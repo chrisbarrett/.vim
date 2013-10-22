@@ -73,3 +73,5 @@ vnoremap <Space> za
 " Enable spell checking.
 set spell
 set spelllang=en_gb
+" Configure gundo.
+nnoremap <C-x>u :GundoToggle<CR>
