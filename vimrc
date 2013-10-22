@@ -33,6 +33,8 @@ set incsearch
 set hlsearch
 " Enable line wrapping
 set wrap
+set linebreak
+set nolist
 " Show 3 lines of context around the cursor.
 set scrolloff=3
 " Disable beeps
