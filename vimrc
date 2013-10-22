@@ -68,3 +68,6 @@ map <leader>t :FuzzyFinderTextMate<Enter>
 " Space to toggle folds.
 nnoremap <Space> za
 vnoremap <Space> za
+" Enable spell checking.
+set spell
+set spelllang=en_gb
