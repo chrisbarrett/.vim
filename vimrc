@@ -75,3 +75,6 @@ set spell
 set spelllang=en_gb
 " Configure gundo.
 nnoremap <C-x>u :GundoToggle<CR>
+" Set cursor shape in iTerm
+let &t_SI = "\<Esc>]50;CursorShape=1\x7"
+let &t_EI = "\<Esc>]50;CursorShape=0\x7"
