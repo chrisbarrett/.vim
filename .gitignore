@@ -1,5 +1,5 @@
 autoload
 temp
 .netrwhist
-bundle
 *.swp
+spell
