@@ -20,6 +20,7 @@ repos = [
   'git://github.com/tpope/vim-ragtag.git',
   'git://github.com/shemerey/vim-peepopen.git',
   'git://github.com/tpope/vim-unimpaired.git',
+  'git://github.com/sjl/gundo.vim.git',
    # themes
   'git://github.com/altercation/vim-colors-solarized.git'
 ]
