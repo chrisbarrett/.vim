@@ -1,6 +1,6 @@
 set nocompatible
 
-call pathogen#infect()
+execute pathogen#infect()
 
 " Turn on syntax highlighting.
 syntax enable
