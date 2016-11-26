@@ -1,12 +1,12 @@
 set nocompatible
 
-execute pathogen#infect()
+" execute pathogen#infect()
 
 " Turn on syntax highlighting.
 syntax enable
 " Turn on file type detection.
 filetype plugin indent on
-colorscheme solarized
+" colorscheme solarized
 " Load the matchit plugin.
 runtime macros/matchit.vim
 " Display incomplete commands.
@@ -52,7 +52,7 @@ set expandtab
 " Show the status line all the time
 set laststatus=2
 " Useful status information at bottom of screen
-set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+" set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{fugitive#statusline()}%{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 " Delete trailing whitespace on save.
 autocmd BufWritePre * :%s/\s\+$//e
 " Tab mappings.
